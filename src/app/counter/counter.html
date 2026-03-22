@@ -1,0 +1,12 @@
+<div id="calc">
+    <p id="number">{{number}}</p>
+    <div id="buttondiv">
+        <button (click)="decrease()" id="de">Decrease</button>
+        <button (click)="increase()" id="in">Increase</button>
+    </div>
+
+    @if (number<0){
+        <p id="warning">The number is negative value!</p>
+    }
+</div>
+
